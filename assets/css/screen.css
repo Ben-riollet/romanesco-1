@@ -58,7 +58,7 @@ h1 {
   margin: 0.67em 0;
 }
 mark {
-  background: #ff0;
+  background: #000;
   color: #000;
 }
 small {
@@ -6164,7 +6164,7 @@ button.close {
   }
 }
 body {
-  background-color: #fdd9d5;
+  background-color: #E7E7E7;
 }
 img {
   display: block;
@@ -6181,4 +6181,5 @@ img:hover {
 }
 canvas {
   background-color: white;
+
 }

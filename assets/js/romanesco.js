@@ -56,10 +56,10 @@ function init(){
 
 	$( "#mainCanvas" )
 		.mousemove(function( event ) {
-			var x =  event.clientX-(b.diam*.5);
-			var y =  event.clientY-(b.diam*.5);
+			var x =  event.clientX-(b.diam*.50);
+			var y =  event.clientY-(b.diam*.100);
 
-			$("#previewCursor").css({ top: y +"px", left: x+"px"});
+			$("#previewCursor").css({ top: y+50+"px", left: x+"px"});
 			if(canDraw) ctx.drawImage(stamp, x ,y, b.diam, b.diam);
 		})
 		$("body")
@@ -75,7 +75,7 @@ function updateBrush(){
 	stamp = new Image();
 	stamp.src = b.src;
 
-	stamp.onload=function(){ canDraw = true; }
+	stamp.onload=function(){ canDraw = false; }
 
   updatePointer();
 }
